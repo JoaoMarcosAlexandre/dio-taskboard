@@ -12,9 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static com.joaoalexandre.taskboard.joaoalexandre.persistence.config.ConnectConfig.getConnection;
-import static com.joaoalexandre.taskboard.joaoalexandre.persistence.entity.BoardColumnKindEnum.*;
-
 
 public class MainMenu {
 
