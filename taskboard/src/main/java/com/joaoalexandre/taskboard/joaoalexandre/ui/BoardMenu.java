@@ -26,7 +26,7 @@ public class BoardMenu {
 
     public void execute() {
         try {
-            System.out.printf("Bem vindo ao board %s, selecione a operação desejada\n", entity.getId());
+            System.out.printf("Seja bem vindo ao board %s, selecione a operação desejada\n", entity.getId());
             var option = -1;
             while (option != 9) {
                 System.out.println("1 - Criar um card");

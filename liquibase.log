@@ -1,0 +1,38 @@
+ago. 28, 2025 12:17:09 PM liquibase.command
+INFO: Logging exception.
+ERROR: Exception Details
+ERROR: Exception Primary Class:  ChangeLogParseException
+ERROR: Exception Primary Reason:  /db/changelog/db.changelog-master.yml does not exist
+ERROR: Exception Primary Source:  4.33.0
+ago. 28, 2025 12:17:09 PM liquibase.command
+INFO: Command execution complete
+liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: /db/changelog/db.changelog-master.yml does not exist
+	at liquibase.command.CommandScope.lambda$execute$6(CommandScope.java:310)
+	at liquibase.Scope.child(Scope.java:225)
+	at liquibase.Scope.child(Scope.java:201)
+	at liquibase.command.CommandScope.execute(CommandScope.java:251)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:216)
+	at liquibase.Scope.child(Scope.java:225)
+	at liquibase.Scope.child(Scope.java:215)
+	at liquibase.Scope.child(Scope.java:194)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1366)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.Liquibase.update(Liquibase.java:175)
+	at liquibase.Liquibase.update(Liquibase.java:155)
+	at com.joaoalexandre.taskboard.joaoalexandre.persistence.migration.MigrationStrategy.executeMigration(MigrationStrategy.java:33)
+	at com.joaoalexandre.taskboard.joaoalexandre.Main.main(Main.java:17)
+Caused by: liquibase.exception.ChangeLogParseException: /db/changelog/db.changelog-master.yml does not exist
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:36)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(DatabaseChangelogCommandStep.java:143)
+	at liquibase.Scope.lambda$child$0(Scope.java:216)
+	at liquibase.Scope.child(Scope.java:225)
+	at liquibase.Scope.child(Scope.java:215)
+	at liquibase.Scope.child(Scope.java:194)
+	at liquibase.Scope.child(Scope.java:282)
+	at liquibase.Scope.child(Scope.java:286)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:138)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:84)
+	at liquibase.command.CommandScope.lambda$execute$6(CommandScope.java:263)
+	... 15 more
