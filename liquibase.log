@@ -1,10 +1,10 @@
-ago. 28, 2025 12:30:31 PM liquibase.command
+ago. 28, 2025 12:44:21 PM liquibase.command
 INFO: Logging exception.
 ERROR: Exception Details
 ERROR: Exception Primary Class:  ChangeLogParseException
 ERROR: Exception Primary Reason:  /db/changelog/db.changelog-master.yml does not exist
 ERROR: Exception Primary Source:  4.33.0
-ago. 28, 2025 12:30:31 PM liquibase.command
+ago. 28, 2025 12:44:21 PM liquibase.command
 INFO: Command execution complete
 liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: /db/changelog/db.changelog-master.yml does not exist
 	at liquibase.command.CommandScope.lambda$execute$6(CommandScope.java:310)
